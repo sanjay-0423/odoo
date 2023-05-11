@@ -18,7 +18,7 @@ msgstr ""
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:26+0000\n"
 "Last-Translator: Jolien De Paepe, 2023\n"
-"Language-Team: Dutch (https://app.transifex.com/odoo/teams/41243/nl/)\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -5978,17 +5978,6 @@ msgstr "Aantal"
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
-msgid ""
-"Quants are auto-deleted when appropriate. If you must manually delete them, "
-"please ask a stock manager to do it."
-msgstr ""
-"De hoeveelheden worden automatisch verwijderd wanneer dat nodig is. Als je "
-"ze handmatig moet verwijderen, vraag dan aan een voorraadbeheerder om dit te"
-" doen."
-
-#. module: stock
-#: code:addons/stock/models/stock_quant.py:0
-#, python-format
 msgid "Quant's creation is restricted, you can't do this operation."
 msgstr ""
 "Het aanmaken van hoeveelheden is niet mogelijk, je kunt deze bewerking niet "
@@ -8572,7 +8561,7 @@ msgstr "Maateenheden"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__product_uom_id
-msgid "Unit of measure"
+msgid "Unity of measure"
 msgstr "Maateenheid"
 
 #. module: stock
@@ -9368,8 +9357,8 @@ msgstr ""
 #, python-format
 msgid "You cannot change a cancelled stock move, create a new line instead."
 msgstr ""
-"Je kunt een geannuleerde voorraadverplaatsing niet wijzigen, maak liever een"
-" nieuwe regel aan."
+"Je kan een geannuleerde voorraadbeweging niet wijzigen, maak liever een "
+"nieuwe regel aan."
 
 #. module: stock
 #: code:addons/stock/models/stock_move_line.py:0

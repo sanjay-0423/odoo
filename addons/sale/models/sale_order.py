@@ -123,7 +123,7 @@ class SaleOrder(models.Model):
     def _get_default_team(self):
         return self.env['crm.team']._get_default_team_id()
 
-    @api.onchange('fiscal_position_id', 'company_id')
+    @api.onchange('fiscal_position_id')
     def _compute_tax_id(self):
         """
         Trigger the recompute of the taxes if the fiscal position is changed on the SO.
@@ -685,7 +685,8 @@ class SaleOrder(models.Model):
         return UserError(_(
             "There is nothing to invoice!\n\n"
             "Reason(s) of this behavior could be:\n"
-            "- You should deliver your products before invoicing them.\n"
+            "- You should deliver your products before invoicing them: Click on the \"truck\" icon "
+            "(top-right of your screen) and follow instructions.\n"
             "- You should modify the invoicing policy of your product: Open the product, go to the "
             "\"Sales\" tab and modify invoicing policy from \"delivered quantities\" to \"ordered "
             "quantities\". For Services, you should modify the Service Invoicing Policy to "

@@ -12,7 +12,6 @@
 # Friederike Fasterling-Nesselbosch, 2022
 # Martin Trigaux, 2022
 # Sergio Zanchetta <primes2h@gmail.com>, 2023
-# Sebastiano Picchi, 2023
 # 
 msgid ""
 msgstr ""
@@ -20,8 +19,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-10 06:07+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
-"Last-Translator: Sebastiano Picchi, 2023\n"
-"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2023\n"
+"Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -647,8 +646,6 @@ msgid ""
 "<br/><br/>\n"
 "                    Example of rule:<br/>"
 msgstr ""
-"<br/><br/>\n"
-"                    Esempio di regola:<br/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
@@ -6804,13 +6801,6 @@ msgstr "Cellulare"
 #. openerp-web
 #: code:addons/website/static/src/js/editor/snippets.options.js:0
 #, python-format
-msgid "Mobile Alignment"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/editor/snippets.options.js:0
-#, python-format
 msgid "Mobile menu"
 msgstr "Menù mobile"
 
@@ -9900,13 +9890,6 @@ msgstr "Questa pagina verrà pubblicata il {{ date_formatted }}"
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/js/menu/translate.js:0
-#, python-format
-msgid "This translation is not editable."
-msgstr ""
-
-#. module: website
-#. openerp-web
 #: code:addons/website/static/src/js/menu/seo.js:0
 #, python-format
 msgid ""
@@ -10146,20 +10129,6 @@ msgstr "Transizione"
 #, python-format
 msgid "Translate Attribute"
 msgstr "Attributo traduzione"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/translate.js:0
-#, python-format
-msgid "Translate Selection Option"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/translate.js:0
-#, python-format
-msgid "Translate header in the text. Menu is generated automatically."
-msgstr ""
 
 #. module: website
 #. openerp-web

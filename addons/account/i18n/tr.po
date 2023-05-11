@@ -24,9 +24,9 @@
 # Murat Durmuş <muratd@projetgrup.com>, 2021
 # Ozlem Cikrikci <ozlemc@eskayazilim.com.tr>, 2021
 # abc Def <hdogan1974@gmail.com>, 2021
-# Ediz Duman <neps1192@gmail.com>, 2022
 # Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2022
 # Jérôme JEK <jek@odoo.com>, 2022
+# Ediz Duman <neps1192@gmail.com>, 2023
 # Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2023
 # 
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
 "Last-Translator: Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2023\n"
-"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
+"Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -795,7 +795,7 @@ msgstr "<span class=\"o_stat_text\">Faturalandı</span>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
 msgid "<span class=\"o_stat_text\">Journal Entry</span>"
-msgstr "<span class=\"o_stat_text\">Yevmiye Kaydı</span>"
+msgstr "<span class=\"o_stat_text\">Yevmiye Girişi</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
@@ -947,7 +947,7 @@ msgstr "<span>Tutar</span>"
 #: model_terms:ir.ui.view,arch_db:account.bill_preview
 #: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
 msgid "<span>Amount In Currency</span>"
-msgstr "<span>Para Birimi Tutarı</span>"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.bill_preview
@@ -1085,7 +1085,7 @@ msgstr "<strong>Şirket:</strong>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "<strong>Credit Note Date:</strong>"
-msgstr "<strong>Alacak Dekontu Tarihi:</strong>"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
@@ -1142,7 +1142,7 @@ msgstr "<strong>Ürün</strong>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "<strong>Receipt Date:</strong>"
-msgstr "<strong>Makbuz Tarihi:</strong>"
+msgstr "<strong>Alım Tarihi:</strong>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
@@ -1266,8 +1266,6 @@ msgstr ""
 #, python-format
 msgid "A line of this move is using a deprecated account, you cannot post it."
 msgstr ""
-"Bu yevmiye kaydının bir kalemi kullanımdan kaldırılmış bir hesap kullanıyor,"
-" bunu onaylayamazsınız."
 
 #. module: account
 #: code:addons/account/models/account_payment.py:0
@@ -3513,7 +3511,7 @@ msgstr "Gerçekleşme Esası (Cash Basis)"
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 #, python-format
 msgid "Cash Basis Entries"
-msgstr "Gerçekleşme Esası Kayıtları"
+msgstr "Nakit Temel Girişleri"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_company__tax_cash_basis_journal_id
@@ -3525,7 +3523,7 @@ msgstr "Gerçekleşme Esası Yevmiyesi"
 #: model:ir.model.fields,field_description:account.field_account_move__tax_cash_basis_origin_move_id
 #: model:ir.model.fields,field_description:account.field_account_payment__tax_cash_basis_origin_move_id
 msgid "Cash Basis Origin"
-msgstr "Gerçekleşme Esası Kaynaklı"
+msgstr "Nakit Temel Menşei"
 
 #. module: account
 #: code:addons/account/models/chart_template.py:0
@@ -5571,7 +5569,7 @@ msgstr "Belgeleme"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Domestic country of your accounting"
-msgstr "Muhasebenizin bulunduğu ülke"
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__res_company__account_dashboard_onboarding_state__done
@@ -6065,7 +6063,7 @@ msgstr "Finansal Etiketler"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_partner_mapping__payment_ref_regex
 msgid "Find Text in Label"
-msgstr "Açıklama İçinde Metin Bul"
+msgstr "Etiketteki Metni Bul"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_partner_mapping__narration_regex
@@ -6353,7 +6351,7 @@ msgstr "Alacak Hesaplarından"
 #: model:ir.model.fields.selection,name:account.selection__account_reconcile_model_line__amount_type__regex
 #: model:ir.model.fields.selection,name:account.selection__account_reconcile_model_line_template__amount_type__regex
 msgid "From label"
-msgstr "Açıklamadan"
+msgstr "Etiketten"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_account_invoice_report_all_supp
@@ -7887,7 +7885,7 @@ msgstr "Yevmiye Kalemi"
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_line__label
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_line_template__label
 msgid "Journal Item Label"
-msgstr "Yevmiye Kalemi Açıklaması"
+msgstr "Yevmiye Öğesi Etiketi"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_moves_all
@@ -8101,18 +8099,18 @@ msgstr "Kpi Hesap Toplam Gelir Değeri"
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_form
 #, python-format
 msgid "Label"
-msgstr "Açıklama"
+msgstr "Etiket"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model__match_label_param
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_template__match_label_param
 msgid "Label Parameter"
-msgstr "Açıklama Parametresi"
+msgstr "Etiket Parametresi"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_tax__description
 msgid "Label on Invoices"
-msgstr "Faturalarda Açıklama"
+msgstr "Faturalarda Etiket"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__lang
@@ -8663,7 +8661,7 @@ msgstr "Regex ile Eşleştir"
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model__match_text_location_label
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_template__match_text_location_label
 msgid "Match Text Location Label"
-msgstr "Eşleşme Metni Konum Açıklaması"
+msgstr "Metin Konumu Etiketini Eşleştir"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model__match_text_location_note
@@ -10364,23 +10362,10 @@ msgstr ""
 #: code:addons/account/models/chart_template.py:0
 #, python-format
 msgid ""
-"Please check the fiscal country of company %s. (Settings > Accounting > "
-"Fiscal Country)Taxes can only be updated if they are in the company's fiscal"
-" country (%s) or the localization's country (%s)."
-msgstr ""
-
-#. module: account
-#: code:addons/account/models/chart_template.py:0
-#, python-format
-msgid ""
 "Please check these taxes. They might be outdated. We did not update them. "
 "Indeed, they do not exactly match the taxes of the original version of the "
 "localization module.<br/>You might want to archive or adapt them.<br/><ul>"
 msgstr ""
-".Lütfen bu vergileri kontrol edin. Modası geçmiş olabilirler. Bunları "
-"güncellemedik. Gerçekten de, yerelleştirme modülünün orijinal sürümünün "
-"vergileriyle tam olarak eşleşmiyorlar.<br/>Bunları arşivlemek veya uyarlamak"
-" isteyebilirsiniz.<br/><ul>"
 
 #. module: account
 #: code:addons/account/models/account_payment.py:0
@@ -10495,7 +10480,7 @@ msgstr "Farkı Onayla"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.validate_account_move_view
 msgid "Post Journal Entries"
-msgstr "Yevmiye Kayıtlarını Onayla"
+msgstr "Yevmiye Kayıtlarını İşle"
 
 #. module: account
 #: model:ir.actions.server,name:account.action_account_confirm_payments
@@ -10505,7 +10490,7 @@ msgstr "Ödeme Sonrası"
 #. module: account
 #: model:ir.actions.act_window,name:account.action_validate_account_move
 msgid "Post entries"
-msgstr "Onaylı Kayıtlar"
+msgstr "Onay Kayıtları"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_move__state__posted
@@ -10514,19 +10499,19 @@ msgstr "Onaylı Kayıtlar"
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_search
 msgid "Posted"
-msgstr "Onaylanmış"
+msgstr "İşlenmiş"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__posted_before
 #: model:ir.model.fields,field_description:account.field_account_move__posted_before
 #: model:ir.model.fields,field_description:account.field_account_payment__posted_before
 msgid "Posted Before"
-msgstr "Daha Önce Onaylandı"
+msgstr "Daha Önce Yayınlanan"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 msgid "Posted Entries only"
-msgstr "Sadece Onaylı Kayıtlar"
+msgstr "- Sadece Onaylı Kayıtlar"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
@@ -11011,7 +10996,7 @@ msgstr "Denkleştirme Parçaları"
 #: code:addons/account/models/partner.py:0
 #, python-format
 msgid "Record cannot be deleted. Partner used in Accounting"
-msgstr "Kayıt silinemez. İş Ortağı Muhasebede kullanılıyor"
+msgstr ""
 
 #. module: account
 #: code:addons/account/models/account_tax.py:0
@@ -11697,7 +11682,7 @@ msgstr "Vergileri Ara"
 msgid ""
 "Search in the Statement's Label to find the Invoice/Payment's reference"
 msgstr ""
-"Faturanın / Ödemenin referansını bulmak için Ekstrenin Açıklamasında arama "
+"Faturanın / Ödemenin referansını bulmak için Ekstrenin Etiketinde arama "
 "yapın"
 
 #. module: account
@@ -14129,8 +14114,8 @@ msgid ""
 "  e.g: .*N°48748 abc123.*"
 msgstr ""
 "Eşleme normal ifadeler kullanır.\n"
-"- Satırın başındaki metni eşleştirmek için (açıklama veya notlarda), metninizi doldurmanız yeterlidir.\n"
-"- Metni herhangi bir yerde eşleştirmek için (açıklama veya notlarda), metninizi .*\n"
+"- Satırın başındaki metni eşleştirmek için (etiket veya notlarda), metninizi doldurmanız yeterlidir.\n"
+"- Metni herhangi bir yerde eşleştirmek için (etiket veya notlarda), metninizi .*\n"
 "  Örneğin: .*N°48748 abc123.*"
 
 #. module: account
@@ -14315,9 +14300,9 @@ msgid ""
 "        * Not Contains: Negation of \"Contains\".\n"
 "        * Match Regex: Define your own regular expression."
 msgstr ""
-"Denkleştirme modeli yalnızca açıklama olduğunda uygulanacaktır:\n"
-"        * İçerir: Teklif açıklaması bu dizeyi içermelidir (büyük/küçük harfe duyarlı değildir).\n"
-"        * İçermez: \"İçerir\" 'in olumsuzu.\n"
+"Denkleştirme modeli etiket yalnızca şu durumlarda uygulanır:\n"
+"        * İçerik: Teklif etiketi bu dizeyi içermelidir (büyük / küçük harf duyarsız).\n"
+"        * İçermez: \"İçerir\" in olumsuzlanması.\n"
 "        * Eşleşme Regex: Kendi normal ifadenizi tanımlayın."
 
 #. module: account
@@ -14666,8 +14651,6 @@ msgid ""
 "There was an error when trying to add the banner to the original PDF.\n"
 "Please make sure the source file is valid."
 msgstr ""
-"Başlığı orijinal PDF'ye eklemeye çalışırken bir hata oluştu.\n"
-"Lütfen kaynak dosyanın geçerli olduğundan emin olun."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -14786,9 +14769,6 @@ msgid ""
 " country. Check company fiscal country in the settings and tax country in "
 "taxes configuration."
 msgstr ""
-"Bu kayıt, mali ülkenizle uyumlu olmayan bir veya daha fazla vergi içeriyor. "
-"Ayarlardan şirket mali ülkesini ve vergi yapılandırmasından vergi ülkesini "
-"kontrol edin."
 
 #. module: account
 #: code:addons/account/models/account_move.py:0
@@ -14817,8 +14797,6 @@ msgid ""
 "This entry contains taxes that are not compatible with your fiscal position."
 " Check the country set in fiscal position and in your tax configuration."
 msgstr ""
-"Bu kayıt, mali koşulunuzla uyumlu olmayan vergiler içeriyor. Mali koşulda ve"
-" vergi yapılandırmanızda ayarlanan ülkeyi kontrol edin."
 
 #. module: account
 #: code:addons/account/wizard/account_automatic_entry_wizard.py:0
@@ -14968,8 +14946,6 @@ msgid ""
 "This product is already being used in posted Journal Entries.\n"
 "If you want to change its Unit of Measure, please archive this product and create a new one."
 msgstr ""
-"Bu ürün, onaylanan Yevmiye Kayıtlarında zaten kullanılmaktadır.\n"
-"Ölçü Birimini değiştirmek istiyorsanız, lütfen bu ürünü arşivleyin ve yeni bir tane oluşturun."
 
 #. module: account
 #: code:addons/account/models/account_reconcile_model.py:0
@@ -15347,7 +15323,7 @@ msgstr "Onaylanmamış"
 #: code:addons/account/models/company.py:0
 #, python-format
 msgid "Unposted Entries"
-msgstr "Onaylanmamış Kayıtlar"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
@@ -15654,9 +15630,9 @@ msgid ""
 "You could enter\n"
 "BRT: ([\\d,]+)"
 msgstr ""
-"Borç Silme satırının miktarı için değer\n"
+"Yazma satırının miktarı için değer\n"
 "    * Yüzde: Bakiyenin yüzdesi, 0 ile 100 arasında.\n"
-"    * Sabit: Borç Silmenin sabit değeri. Tutar negatifse borç, pozitifse kredi olarak sayılır.\n"
+"    * Sabit: Yazmanın sabit değeri. Tutar negatifse borç, pozitifse kredi olarak sayılır.\n"
 "    * Etiketten: Regex sınırlayıcısına gerek yoktur, sadece regex gereklidir. Örneğin, miktarı\n"
 "R:9672938 10/07 AX 9415126318 T:5L:NA BRT: 3358,07 C:\n"
 "Girebilirsiniz\n"
@@ -16260,7 +16236,6 @@ msgstr ""
 #, python-format
 msgid "Please contact your accountant to print the Hash integrity result."
 msgstr ""
-"Hash bütünlüğü sonucunu yazdırmak için lütfen muhasebecinize başvurun."
 
 #. module: account
 #: code:addons/account/models/account_account.py:0
@@ -16354,9 +16329,6 @@ msgid ""
 "The following entries are already hashed:\n"
 "%s"
 msgstr ""
-"Şu alanları düzenleyemezsiniz: %s.\n"
-"Aşağıdaki kayıtlar zaten şifreli hale getirilmiştir:\n"
-"%s"
 
 #. module: account
 #: code:addons/account/models/account_move.py:0
@@ -16649,7 +16621,7 @@ msgstr "T&amp;C yansıtılacak şekilde bu dokümanı güncellemelisiniz."
 #: code:addons/account/models/chart_template.py:0
 #, python-format
 msgid "Your taxes have been updated !"
-msgstr "Vergileriniz güncellendi!"
+msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_position_form
@@ -16975,8 +16947,6 @@ msgid ""
 "The Unit of Measure (UoM) '%s' you have selected for product '%s', is "
 "incompatible with its category : %s."
 msgstr ""
-" '%s' ürünü için seçtiğiniz Ölçü Birimi (UoM) '%s',  kategorisi : %s ile "
-"uyumsuz."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_analytic_default_kanban
@@ -17063,5 +17033,3 @@ msgid ""
 "An analytic default requires an analytic account or an analytic tag used for"
 " analytic distribution."
 msgstr ""
-"Bir analitik varsayılan, bir analitik hesap veya analitik dağıtım için "
-"kullanılan bir analitik etiket gerektirir."

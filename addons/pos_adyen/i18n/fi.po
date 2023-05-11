@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Veikko Väätäjä <veikko.vaataja@gmail.com>, 2021
-# Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,8 +11,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-16 13:18+0000\n"
 "PO-Revision-Date: 2021-09-14 12:24+0000\n"
-"Last-Translator: Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023\n"
-"Language-Team: Finnish (https://app.transifex.com/odoo/teams/41243/fi/)\n"
+"Last-Translator: Veikko Väätäjä <veikko.vaataja@gmail.com>, 2021\n"
+"Language-Team: Finnish (https://www.transifex.com/odoo/teams/41243/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -23,58 +22,58 @@ msgstr ""
 #. module: pos_adyen
 #: model_terms:ir.ui.view,arch_db:pos_adyen.pos_config_view_form
 msgid "Add tip through payment terminal (Adyen)"
-msgstr "Lisää juomaraha maksupäätteen kautta (Adyen)"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_api_key
 msgid "Adyen API key"
-msgstr "Adyen API-avain"
+msgstr ""
 
 #. module: pos_adyen
 #. openerp-web
 #: code:addons/pos_adyen/static/src/js/payment_adyen.js:0
 #, python-format
 msgid "Adyen Error"
-msgstr "Adyen Virhe"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_latest_diagnosis
 msgid "Adyen Latest Diagnosis"
-msgstr "Adyen Viimeisin diagnoosi"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_latest_response
 msgid "Adyen Latest Response"
-msgstr "Adyen Viimeisin vastaus"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_terminal_identifier
 msgid "Adyen Terminal Identifier"
-msgstr "Adyen päätteen tunnus"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_payment_method__adyen_test_mode
 msgid "Adyen Test Mode"
-msgstr "Adyen testitila"
+msgstr ""
 
 #. module: pos_adyen
 #. openerp-web
 #: code:addons/pos_adyen/static/src/js/payment_adyen.js:0
 #, python-format
 msgid "An unexpected error occurred. Message from Adyen: %s"
-msgstr "Tapahtui odottamaton virhe. Viesti Adyenilta: %s"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,field_description:pos_adyen.field_pos_config__adyen_ask_customer_for_tip
 msgid "Ask Customers For Tip"
-msgstr "Pyydä asiakkailta juomarahaa"
+msgstr ""
 
 #. module: pos_adyen
 #. openerp-web
 #: code:addons/pos_adyen/static/src/js/payment_adyen.js:0
 #, python-format
 msgid "Authentication failed. Please check your Adyen credentials."
-msgstr "Tunnistautuminen epäonnistui. Tarkista Adyen-tunnuksesi."
+msgstr ""
 
 #. module: pos_adyen
 #. openerp-web
@@ -84,15 +83,13 @@ msgid ""
 "Cancelling the payment failed. Please cancel it manually on the payment "
 "terminal."
 msgstr ""
-"Maksun peruuttaminen epäonnistui. Peruuta maksu manuaalisesti "
-"maksupäätteellä."
 
 #. module: pos_adyen
 #. openerp-web
 #: code:addons/pos_adyen/static/src/js/payment_adyen.js:0
 #, python-format
 msgid "Cannot process transactions with negative amount."
-msgstr "Negatiivisen summan sisältäviä tapahtumia ei voida käsitellä."
+msgstr ""
 
 #. module: pos_adyen
 #. openerp-web
@@ -102,15 +99,13 @@ msgid ""
 "Could not connect to the Odoo server, please check your internet connection "
 "and try again."
 msgstr ""
-"Yhteyttä Odoo-palvelimeen ei saatu muodostettua, tarkista internet-yhteytesi"
-" ja yritä uudelleen."
 
 #. module: pos_adyen
 #. openerp-web
 #: code:addons/pos_adyen/static/src/js/payment_adyen.js:0
 #, python-format
 msgid "Message from Adyen: %s"
-msgstr "Viesti Adyenilta: %s"
+msgstr ""
 
 #. module: pos_adyen
 #: code:addons/pos_adyen/models/pos_config.py:0
@@ -118,8 +113,6 @@ msgstr "Viesti Adyenilta: %s"
 msgid ""
 "Please configure a tip product for POS %s to support tipping with Adyen."
 msgstr ""
-"Määritä juomarahatuote kassalle %s tukeaksesi juomarahojen keräämistä "
-"Adyenin avulla."
 
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_pos_config
@@ -129,7 +122,7 @@ msgstr "Kassapäätteen asetukset"
 #. module: pos_adyen
 #: model:ir.model,name:pos_adyen.model_pos_payment_method
 msgid "Point of Sale Payment Methods"
-msgstr "Kassan maksutavat"
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_config__adyen_ask_customer_for_tip
@@ -139,7 +132,7 @@ msgstr ""
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_test_mode
 msgid "Run transactions in the test environment."
-msgstr "Suorita tapahtumia testiympäristössä."
+msgstr ""
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_latest_response
@@ -157,13 +150,7 @@ msgstr ""
 #: code:addons/pos_adyen/models/pos_payment_method.py:0
 #, python-format
 msgid "Terminal %s is already used on payment method %s."
-msgstr "Päätelaite %s on jo käytössä maksutavassa %s."
-
-#. module: pos_adyen
-#: code:addons/pos_adyen/models/pos_payment_method.py:0
-#, python-format
-msgid "Terminal %s is already used in company %s on payment method %s."
-msgstr "Päätelaite %s on jo käytössä yrityksessä %s maksutapaan %s."
+msgstr ""
 
 #. module: pos_adyen
 #. openerp-web
@@ -180,10 +167,8 @@ msgid ""
 "Used when connecting to Adyen: https://docs.adyen.com/user-management/how-"
 "to-get-the-api-key/#description"
 msgstr ""
-"Käytetään Adyen-yhteyden muodostamisessa: https://docs.adyen.com/user-"
-"management/how-to-get-the-api-key/#description"
 
 #. module: pos_adyen
 #: model:ir.model.fields,help:pos_adyen.field_pos_payment_method__adyen_terminal_identifier
 msgid "[Terminal model]-[Serial number], for example: P400Plus-123456789"
-msgstr "[Päätelaitteen malli]-[Sarjanumero], esimerkiksi: P400Plus-123456789"
+msgstr ""

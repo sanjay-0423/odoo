@@ -312,7 +312,7 @@ function factory(dependencies) {
             const HIDDEN_MENU_WIDTH = 200; // max width, including width of dropup list items
             const START_GAP_WIDTH = device.isMobile ? 0 : 10;
             const chatWindows = this.allOrdered;
-            if ((!device.isMobile && discuss.isOpen) || this.messaging.discussPublicView) {
+            if (!device.isMobile && discuss.isOpen) {
                 return visual;
             }
             if (!chatWindows.length) {

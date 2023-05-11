@@ -314,11 +314,6 @@ var EditPageMenu = websiteNavbarData.WebsiteNavbarActionWidget.extend({
                         this.classList.add('o_dirty');
                     }
                 });
-                if (this.options.processRecordsCallback) {
-                    for (const el of $savable) {
-                        this.options.processRecordsCallback(record, el);
-                    }
-                }
             }
         };
         this.observer = new MutationObserver(processRecords);
@@ -403,9 +398,7 @@ var EditPageMenu = websiteNavbarData.WebsiteNavbarActionWidget.extend({
      * @private
      */
     _addEditorMessages: function () {
-        const $editable = this._targetForEdition()
-            .find('.oe_structure.oe_empty, [data-oe-type="html"]')
-            .filter(':o_editable');
+        const $editable = this._targetForEdition().find('.oe_structure.oe_empty, [data-oe-type="html"]');
         this.$editorMessageElements = $editable
             .not('[data-editor-message]')
             .attr('data-editor-message', _t('DRAG BUILDING BLOCKS HERE'));

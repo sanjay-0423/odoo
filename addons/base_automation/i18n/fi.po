@@ -13,7 +13,6 @@
 # Veikko Väätäjä <veikko.vaataja@gmail.com>, 2021
 # Teemu Ahonen <teemu.ahonen@web-veistamo.fi>, 2021
 # Tomi Tiainen, 2021
-# Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
 # 
 msgid ""
 msgstr ""
@@ -21,8 +20,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-14 10:28+0000\n"
 "PO-Revision-Date: 2021-09-14 12:20+0000\n"
-"Last-Translator: Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023\n"
-"Language-Team: Finnish (https://app.transifex.com/odoo/teams/41243/fi/)\n"
+"Last-Translator: Tomi Tiainen, 2021\n"
+"Language-Team: Finnish (https://www.transifex.com/odoo/teams/41243/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -37,8 +36,6 @@ msgid ""
 "\"\n"
 "                (ID:"
 msgstr ""
-"\"\n"
-"                (ID:"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__help
@@ -112,12 +109,12 @@ msgstr "Automatisointi"
 #: model:ir.cron,cron_name:base_automation.ir_cron_data_base_automation_check
 #: model:ir.cron,name:base_automation.ir_cron_data_base_automation_check
 msgid "Base Action Rule: check and execute"
-msgstr "Perustan toimintasääntö: tarkista ja suorita"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trigger__on_change
 msgid "Based on Form Modification"
-msgstr "Perustuen lomakkeen muokkaamiseen"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trigger__on_time
@@ -127,22 +124,22 @@ msgstr "Perustuu ajastettuun ehtoon"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__filter_pre_domain
 msgid "Before Update Domain"
-msgstr "Ennen toimialueen päivittämistä"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__binding_model_id
 msgid "Binding Model"
-msgstr "Sitova malli"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__binding_type
 msgid "Binding Type"
-msgstr "Sidostyyppi"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__binding_view_types
 msgid "Binding View Types"
-msgstr "Sitovat näkymätyypit"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__child_ids
@@ -196,7 +193,7 @@ msgstr "Viivästyksen tyyppi"
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "Disable Action"
-msgstr "Kytke toiminta pois päältä"
+msgstr ""
 
 #. module: base_automation
 #. openerp-web
@@ -208,10 +205,6 @@ msgid ""
 "                as you are effectively disabling a customization that may set\n"
 "                important and/or required fields."
 msgstr ""
-"Tämän automaattisen toiminnan kytkeminen pois päältä mahdollistaa työnkulun jatkamisen,\n"
-"                mutta kaikki tiedot, jotka luodaan tämän jälkeen voivat olla korruptoituneita.\n"
-"                Käytännössä kytket pois päältä mukautuksen, joka saattaa asettaa\n"
-"                tärkeitä ja / tai tarvittavia kenttiä."
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__display_name
@@ -221,19 +214,19 @@ msgstr "Näyttönimi"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_date_deadline_range
 msgid "Due Date In"
-msgstr "Erääntyy"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_date_deadline_range_type
 msgid "Due type"
-msgstr "Erääntymisen tyyppi"
+msgstr ""
 
 #. module: base_automation
 #. openerp-web
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "Edit action"
-msgstr "Mukauta toimintoa"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__template_id
@@ -248,7 +241,7 @@ msgstr "Ulkoinen ID"
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__on_change_field_ids
 msgid "Fields that trigger the onchange."
-msgstr "Kentät, jotka käynnistävät onchange-laukaisimen."
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__groups_id
@@ -310,12 +303,12 @@ msgstr "Viimeksi päivitetty"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__least_delay_msg
 msgid "Least Delay Msg"
-msgstr "Viimeisimmän viiveen viesti"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__link_field_id
 msgid "Link Field"
-msgstr "Linkitetty kenttä"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trg_date_range_type__minutes
@@ -338,13 +331,11 @@ msgid ""
 "Model for record creation / update. Set this field only to specify a "
 "different model than the base model."
 msgstr ""
-"Malli tietueen luomiselle tai päivittämiselle. Aseta tämä kenttä vain "
-"määrittämään toisen mallin kuin perusmallin."
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__model_id
 msgid "Model on which the server action runs."
-msgstr "Malli, jossa palvelintoiminto ajetaan."
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trg_date_range_type__month
@@ -366,7 +357,7 @@ msgstr ""
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__on_change_field_ids
 msgid "On Change Fields Trigger"
-msgstr "Muuttuvan kentän laukaisin"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trigger__on_create
@@ -381,7 +372,7 @@ msgstr "Luonnin ja päivityksen yhteydessä"
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trigger__on_unlink
 msgid "On Deletion"
-msgstr "Poistettaessa"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields.selection,name:base_automation.selection__base_automation__trigger__on_write
@@ -403,8 +394,6 @@ msgid ""
 "Provide the field used to link the newly created record on the record used "
 "by the server action."
 msgstr ""
-"Anna kenttä, jota käytetään linkittämään uusi luotu tietue siihen "
-"tietueeseen, jota palvelintoiminto käyttää."
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__code
@@ -437,12 +426,11 @@ msgid ""
 "Setting a value makes this action available in the sidebar for the given "
 "model."
 msgstr ""
-"Arvon asettaminen saa tämän tominnon saataville annetun mallin sivupalkkiin."
 
 #. module: base_automation
 #: model_terms:ir.actions.act_window,help:base_automation.base_automation_act
 msgid "Setup a new automated automation"
-msgstr "Aseta uusi automaattinen toiminto"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_summary
@@ -457,7 +445,7 @@ msgstr "Kohdemalli"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_name
 msgid "Target Model Name"
-msgstr "Kohdemallin nimi"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__activity_user_field_name
@@ -471,8 +459,6 @@ msgid ""
 "The \"%(trigger_value)s\" %(trigger_label)s can only be used with the "
 "\"%(state_value)s\" action type"
 msgstr ""
-"Laukaisinta \"%(trigger_value)s\" %(trigger_label)s voidaan käyttää vain "
-"\"%(state_value)s\" toimintatyypissä"
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__trigger_field_ids
@@ -489,8 +475,6 @@ msgid ""
 "The error occurred during the execution of the automated action\n"
 "                \""
 msgstr ""
-"Automaattista toimintoa suoritettaessa tapahtui virhe\n"
-"                \""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__trigger
@@ -506,7 +490,7 @@ msgstr "Liipaisupäivämäärä"
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__trigger_field_ids
 #: model_terms:ir.ui.view,arch_db:base_automation.view_base_automation_form
 msgid "Trigger Fields"
-msgstr "Laukeavat kentät"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__state
@@ -535,9 +519,6 @@ msgid ""
 " 'Generic User From Record' to specify the field name of the user to choose "
 "on the record."
 msgstr ""
-"Käytä 'Tietty käyttäjä'\" määrittääksesi aina saman käyttäjän seuraavaan "
-"toimintaan. Käytä 'Yleinen käyttäjä tietueesta' määrittääksesi tietueelle "
-"valittavan käyttäjän nimen."
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__trg_date_calendar_id
@@ -553,11 +534,6 @@ msgid ""
 "                opportunity which still has status pending after 14 days might\n"
 "                trigger an automatic reminder email."
 msgstr ""
-"Käytä automaattisia toimintoja käynnistääksesi toiminnot automaattisesti\n"
-"                 erilaisia näyttöjä. Esimerkki: tietyn käyttäjän luoma liidi voi\n"
-"                 asetetaan automaattisesti tietylle myyntitiimille tai\n"
-"                 myyntimahdollisuus, jonka tila on vielä kesken 14 päivän jälkeen\n"
-"                 käynnistää automaattisen muistutussähköpostin."
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_field_name
@@ -582,8 +558,6 @@ msgid ""
 "When calculating a day-based timed condition, it is possible to use a "
 "calendar to compute the date based on working days."
 msgstr ""
-"Päiväkohtaista ajastusehtoa laskettaessa on mahdollista laskea päivämäärä "
-"työpäivien perusteella kalenterin avulla."
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__sequence
@@ -591,8 +565,6 @@ msgid ""
 "When dealing with multiple actions, the execution order is based on the "
 "sequence. Low number means high priority."
 msgstr ""
-"Kun käsitellään useita toimintoja, suoritusjärjestys perustuu järjestykseen."
-" Pieni numero tarkoittaa korkeaa prioriteettia."
 
 #. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__trg_date_id
@@ -612,8 +584,6 @@ msgid ""
 "Write Python code that the action will execute. Some variables are available"
 " for use; help about python expression is given in the help tab."
 msgstr ""
-"Kirjoita Python-koodi, jonka toiminto suorittaa. Jotkut muuttujat ovat "
-"käytettävissä; Ohjeet python-lausekkeesta löytyvät Ohje-välilehdeltä."
 
 #. module: base_automation
 #. openerp-web
@@ -622,8 +592,6 @@ msgstr ""
 msgid ""
 "You can ask an administrator to disable or correct this automated action."
 msgstr ""
-"Voit pyytää järjestelmänvalvojaa poistamaan tai korjaamaan tämän "
-"automaattisen toiminnon."
 
 #. module: base_automation
 #. openerp-web
@@ -631,8 +599,6 @@ msgstr ""
 #, python-format
 msgid "You can disable this automated action or edit it to solve the issue."
 msgstr ""
-"Voit poistaa tämän automaattisen toiminnon käytöstä tai muokata sitä "
-"ratkaistaksesi ongelman."
 
 #. module: base_automation
 #: code:addons/base_automation/models/base_automation.py:0
@@ -641,5 +607,3 @@ msgid ""
 "You cannot send an email, add followers or create an activity for a deleted "
 "record.  It simply does not work."
 msgstr ""
-"Et voi lähettää sähköpostia, lisätä seuraajia tai luoda aktiviteettia "
-"poistetulle tietueelle. Se nyt ei vain toimi näin."

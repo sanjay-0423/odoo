@@ -123,9 +123,6 @@ class AccountEdiXmlCII(models.AbstractModel):
             # Facturx requires the monetary values to be rounded to 2 decimal values
             return float_repr(number, decimal_places)
 
-        # Validate the structure of the taxes
-        self._validate_taxes(invoice)
-
         # Create file content.
         tax_details = invoice._prepare_edi_tax_details(
             grouping_key_generator=lambda tax_values: {
@@ -219,12 +216,14 @@ class AccountEdiXmlCII(models.AbstractModel):
             logs.append(_("The invoice has been converted into a credit note and the quantities have been reverted."))
 
         # ==== partner_id ====
-        role = invoice_form.journal_id.type == 'purchase' and 'SellerTradeParty' or 'BuyerTradeParty'
-        name = _find_value(f"//ram:{role}/ram:Name")
-        mail = _find_value(f"//ram:{role}//ram:URIID[@schemeID='SMTP']")
-        vat = _find_value(f"//ram:{role}/ram:SpecifiedTaxRegistration/ram:ID")
-        phone = _find_value(f"//ram:{role}/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:CompleteNumber")
-        self._import_retrieve_and_fill_partner(invoice_form, name=name, phone=phone, mail=mail, vat=vat)
+        partner_type = invoice_form.journal_id.type == 'purchase' and 'SellerTradeParty' or 'BuyerTradeParty'
+        invoice_form.partner_id = self.env['account.edi.format']._retrieve_partner(
+            name=_find_value(f"//ram:{partner_type}/ram:Name"),
+            mail=_find_value(f"//ram:{partner_type}//ram:URIID[@schemeID='SMTP']"),
+            vat=_find_value(f"//ram:{partner_type}/ram:SpecifiedTaxRegistration/ram:ID"),
+        )
+        if not invoice_form.partner_id:
+            logs.append(_("Could not retrieve the %s.", _("customer") if invoice_form.move_type in ('out_invoice', 'out_refund') else _("vendor")))
 
         # ==== currency_id ====
 
@@ -251,11 +250,11 @@ class AccountEdiXmlCII(models.AbstractModel):
 
         narration = ""
         note_node = tree.find('./{*}ExchangedDocument/{*}IncludedNote/{*}Content')
-        if note_node is not None and note_node.text:
+        if note_node is not None:
             narration += note_node.text + "\n"
 
         payment_terms_node = tree.find('.//{*}SpecifiedTradePaymentTerms/{*}Description')
-        if payment_terms_node is not None and payment_terms_node.text:
+        if payment_terms_node is not None:
             narration += payment_terms_node.text + "\n"
 
         invoice_form.narration = narration
@@ -269,7 +268,7 @@ class AccountEdiXmlCII(models.AbstractModel):
         # ==== invoice_date ====
 
         invoice_date_node = tree.find('./{*}ExchangedDocument/{*}IssueDateTime/{*}DateTimeString')
-        if invoice_date_node is not None and invoice_date_node.text:
+        if invoice_date_node is not None:
             date_str = invoice_date_node.text
             date_obj = datetime.strptime(date_str, DEFAULT_FACTURX_DATE_FORMAT)
             invoice_form.invoice_date = date_obj.strftime(DEFAULT_SERVER_DATE_FORMAT)
@@ -277,7 +276,7 @@ class AccountEdiXmlCII(models.AbstractModel):
         # ==== invoice_date_due ====
 
         invoice_date_due_node = tree.find('.//{*}SpecifiedTradePaymentTerms/{*}DueDateDateTime/{*}DateTimeString')
-        if invoice_date_due_node is not None and invoice_date_due_node.text:
+        if invoice_date_due_node is not None:
             date_str = invoice_date_due_node.text
             date_obj = datetime.strptime(date_str, DEFAULT_FACTURX_DATE_FORMAT)
             invoice_form.invoice_date_due = date_obj.strftime(DEFAULT_SERVER_DATE_FORMAT)
@@ -286,11 +285,11 @@ class AccountEdiXmlCII(models.AbstractModel):
 
         logs += self._import_fill_invoice_allowance_charge(tree, invoice_form, journal, qty_factor)
 
-        # ==== Prepaid amount ====
+        # ==== Down Payment (prepaid amount) ====
 
         prepaid_node = tree.find('.//{*}ApplicableHeaderTradeSettlement/'
                                  '{*}SpecifiedTradeSettlementHeaderMonetarySummation/{*}TotalPrepaidAmount')
-        logs += self._import_log_prepaid_amount(invoice_form, prepaid_node, qty_factor)
+        self._import_fill_invoice_down_payment(invoice_form, prepaid_node, qty_factor)
 
         # ==== invoice_line_ids ====
 

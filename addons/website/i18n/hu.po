@@ -29,7 +29,7 @@ msgstr ""
 "POT-Creation-Date: 2022-01-10 06:07+0000\n"
 "PO-Revision-Date: 2021-09-14 12:27+0000\n"
 "Last-Translator: Bognár István <f-b-i@freemail.hu>, 2023\n"
-"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
+"Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -6566,13 +6566,6 @@ msgstr "Mobil"
 #. openerp-web
 #: code:addons/website/static/src/js/editor/snippets.options.js:0
 #, python-format
-msgid "Mobile Alignment"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/editor/snippets.options.js:0
-#, python-format
 msgid "Mobile menu"
 msgstr ""
 
@@ -9597,13 +9590,6 @@ msgstr ""
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/js/menu/translate.js:0
-#, python-format
-msgid "This translation is not editable."
-msgstr ""
-
-#. module: website
-#. openerp-web
 #: code:addons/website/static/src/js/menu/seo.js:0
 #, python-format
 msgid ""
@@ -9830,13 +9816,6 @@ msgstr "Átmenet"
 #, python-format
 msgid "Translate Attribute"
 msgstr "Jellemző fordítása"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/translate.js:0
-#, python-format
-msgid "Translate header in the text. Menu is generated automatically."
-msgstr ""
 
 #. module: website
 #. openerp-web

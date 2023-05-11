@@ -44,13 +44,12 @@ class SaleOrder(models.Model):
         return order
 
     def action_confirm(self):
-        res = super().action_confirm()
         valid_coupon_ids = self.generated_coupon_ids.filtered(lambda coupon: coupon.state not in ['expired', 'cancel'])
         valid_coupon_ids.write({'state': 'new', 'partner_id': self.partner_id})
         (self.generated_coupon_ids - valid_coupon_ids).write({'state': 'cancel', 'partner_id': self.partner_id})
         self.applied_coupon_ids.write({'state': 'used'})
         self._send_reward_coupon_mail()
-        return res
+        return super(SaleOrder, self).action_confirm()
 
     def _action_cancel(self):
         res = super()._action_cancel()
